@@ -258,23 +258,15 @@ p { margin: 0; }
 .faq details p { padding: 0 0 24px; color: var(--ink-2); max-width: 44em; }
 
 /* ---------- Sobre ---------- */
-.about { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: clamp(32px, 6vw, 88px); align-items: start; }
-.portrait {
-  position: relative; background: var(--night); color: #fff; border-radius: var(--r-lg); overflow: hidden;
-  aspect-ratio: 4 / 5; display: flex; flex-direction: column; justify-content: flex-end; padding: 32px;
-}
-.portrait .orbit { position: absolute; width: 130%; left: -2%; top: 6%; color: var(--plum-soft); opacity: .5; }
-/* Logo da empresa no lugar da foto (a Julliana preferiu não ter foto no site). */
-.portrait .portrait__logo { position: absolute; top: 28px; left: 32px; width: clamp(96px, 32%, 140px); height: auto; border-radius: var(--r-lg); }
-.portrait strong { position: relative; font-family: var(--serif); font-weight: 400; font-size: 26px; }
-.portrait span { position: relative; color: rgba(255,255,255,.65); font-size: 14px; }
+/* Texto numa coluna só, com largura boa de leitura (o cartão escuro com o
+   logo saiu em 2026-11-04, a pedido da Julliana: não ficou legal). */
+.about .about-text { max-width: 780px; }
 .about-text { display: grid; gap: 20px; font-size: 17px; color: var(--ink-2); }
 .about-text .intro { font-family: var(--serif); font-size: clamp(22px, 2.4vw, 28px); line-height: 1.35; color: var(--ink); letter-spacing: -0.01em; }
 .facts { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 8px 0 0; }
 .facts div { background: var(--white); border-radius: var(--r); padding: 16px 18px; }
 .facts dt { font-size: 13px; color: var(--ink-3); }
 .facts dd { margin: 2px 0 0; font-weight: 600; color: var(--ink); }
-@media (max-width: 860px) { .about { grid-template-columns: 1fr; } .portrait { aspect-ratio: 16 / 11; } }
 @media (max-width: 480px) { .facts { grid-template-columns: 1fr; } }
 
 .values { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
@@ -395,3 +387,18 @@ p { margin: 0; }
 /* Projeto em desenvolvimento */
 .status { display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 600; color: var(--plum); }
 .status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--plum-soft); box-shadow: 0 0 0 3px var(--plum-tint); }
+
+/* ---------- Redes sociais (ícones) ----------
+   .social = rodapé (fundo escuro); .social--claro = página Sobre (fundo claro).
+   O ícone usa "currentColor": pega a cor do texto em volta. */
+.social { display: flex; align-items: center; gap: 10px; margin-top: 20px; }
+.social a {
+  display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%;
+  border: 1px solid var(--night-line); color: rgba(255,255,255,.75); transition: color .2s, border-color .2s;
+}
+.social a:hover { color: #fff; border-color: rgba(255,255,255,.4); }
+.social svg { width: 20px; height: 20px; }
+.social--claro { margin-top: 4px; }
+.social--claro span { font-size: 14px; color: var(--ink-3); margin-right: 4px; }
+.social--claro a { border-color: var(--line); color: var(--ink); background: var(--white); }
+.social--claro a:hover { color: var(--plum); border-color: var(--plum-soft); }
