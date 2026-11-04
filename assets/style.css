@@ -10,10 +10,10 @@
   --ink-3: #7c8190;
   --line: #dadee5;
   --line-2: #c9ced8;
-  --plum: #4f1a4b;
+  --plum: #63245D;   /* ameixa do logo novo (2026-11-04; antes #4f1a4b) */
   --plum-soft: #c9a3c4;
   --plum-tint: #f4ecf3;
-  --night: #121624;
+  --night: #0B0F29;  /* azul-noite do logo novo (2026-11-04; antes #121624) */
   --night-line: rgba(255, 255, 255, 0.1);
 
   --serif: "Fraunces", Georgia, "Times New Roman", serif;
@@ -93,7 +93,8 @@ p { margin: 0; }
 .site-header.scrolled { border-color: var(--line); }
 .site-header .wrap { display: flex; align-items: center; justify-content: space-between; height: 72px; gap: 24px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
-.brand img { width: 40px; height: 40px; border-radius: 50%; }
+/* Ícone do logo novo (SVG, sem fundo): não precisa mais do recorte redondo. */
+.brand img { width: 40px; height: 40px; }
 .brand strong { font-family: var(--serif); font-weight: 500; font-size: 20px; letter-spacing: -0.01em; }
 
 .nav { display: flex; align-items: center; gap: 2px; }
@@ -206,7 +207,8 @@ p { margin: 0; }
 .about-strip { display: grid; grid-template-columns: auto 1fr auto; gap: clamp(24px, 4vw, 56px); align-items: center; }
 .monogram {
   /* Logo redondo da empresa (antes era a inicial "J", no lugar de uma foto). */
-  width: 112px; height: 112px; border-radius: 50%; object-fit: cover; display: block;
+  width: 112px; height: 112px; border-radius: 50%; display: block;
+  background: var(--paper); padding: 14px; box-sizing: border-box;
 }
 .about-strip h2 { font-size: clamp(26px, 2.8vw, 34px); margin-bottom: 10px; }
 .about-strip p { color: var(--ink-2); max-width: 40em; }
