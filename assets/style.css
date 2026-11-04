@@ -205,12 +205,12 @@ p { margin: 0; }
 /* ---------- Quem faz (início) ---------- */
 .about-strip { display: grid; grid-template-columns: auto 1fr auto; gap: clamp(24px, 4vw, 56px); align-items: center; }
 .monogram {
-  width: 112px; height: 112px; border-radius: 50%; background: var(--night); color: #fff;
-  display: grid; place-items: center; font-family: var(--serif); font-style: italic; font-size: 54px; line-height: 1;
+  /* Logo redondo da empresa (antes era a inicial "J", no lugar de uma foto). */
+  width: 112px; height: 112px; border-radius: 50%; object-fit: cover; display: block;
 }
 .about-strip h2 { font-size: clamp(26px, 2.8vw, 34px); margin-bottom: 10px; }
 .about-strip p { color: var(--ink-2); max-width: 40em; }
-@media (max-width: 800px) { .about-strip { grid-template-columns: 1fr; } .monogram { width: 88px; height: 88px; font-size: 42px; } }
+@media (max-width: 800px) { .about-strip { grid-template-columns: 1fr; } .monogram { width: 88px; height: 88px; } }
 
 /* ---------- Serviços (página) ---------- */
 .service {
@@ -264,7 +264,8 @@ p { margin: 0; }
   aspect-ratio: 4 / 5; display: flex; flex-direction: column; justify-content: flex-end; padding: 32px;
 }
 .portrait .orbit { position: absolute; width: 130%; left: -2%; top: 6%; color: var(--plum-soft); opacity: .5; }
-.portrait .initial { position: absolute; top: 24px; left: 32px; font-family: var(--serif); font-style: italic; font-size: 120px; line-height: 1; }
+/* Logo da empresa no lugar da foto (a Julliana preferiu não ter foto no site). */
+.portrait .portrait__logo { position: absolute; top: 28px; left: 32px; width: clamp(96px, 32%, 140px); height: auto; border-radius: var(--r-lg); }
 .portrait strong { position: relative; font-family: var(--serif); font-weight: 400; font-size: 26px; }
 .portrait span { position: relative; color: rgba(255,255,255,.65); font-size: 14px; }
 .about-text { display: grid; gap: 20px; font-size: 17px; color: var(--ink-2); }
