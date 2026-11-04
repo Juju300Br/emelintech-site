@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contato | Emelin Tech</title>
+<meta name="description" content="Peça um orçamento à Emelin Tech pelo formulário, WhatsApp, e-mail ou Instagram. Atendimento em Manaus e online.">
+<meta name="theme-color" content="#f0f2f5">
+<meta property="og:title" content="Contato | Emelin Tech">
+<meta property="og:description" content="Peça um orçamento à Emelin Tech pelo formulário, WhatsApp, e-mail ou Instagram. Atendimento em Manaus e online.">
+<meta property="og:image" content="https://www.emelintech.com.br/img/logo.png">
+<meta property="og:locale" content="pt_BR">
+<link rel="icon" href="img/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Emelin Tech, página inicial">
+      <img src="img/logo.png" alt="" width="40" height="40">
+      <strong>Emelin Tech</strong>
+    </a>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 8h18M3 16h18" stroke="currentColor" stroke-width="1.6"/></svg>
+    </button>
+    <nav class="nav" id="nav">
+      <a href="index.html">Início</a>
+      <a href="servicos.html">Serviços</a>
+      <a href="projetos.html">Projetos</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+      <a class="btn" href="https://wa.me/5592986123780" target="_blank" rel="noopener">Falar no WhatsApp</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="page-top">
+  <div class="wrap">
+    <h1>Vamos conversar?</h1>
+    <p class="lead">Preencha o formulário e a sua mensagem chega pronta no meu WhatsApp. Se preferir, fale direto pelos canais ao lado.</p>
+  </div>
+</section>
+
+<section class="section tight">
+  <div class="wrap contact">
+    <div class="form-card reveal">
+      <form id="contact-form" novalidate>
+        <fieldset class="form-step">
+          <legend><b>1</b>Seus dados</legend>
+          <div class="grid-2">
+            <div class="field">
+              <label for="name">Nome</label>
+              <input id="name" name="name" type="text" placeholder="Como posso te chamar?" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="whatsapp">WhatsApp</label>
+              <input id="whatsapp" name="whatsapp" type="tel" inputmode="tel" placeholder="(92) 99999-9999" autocomplete="tel" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="company">Empresa <span class="opt">(opcional)</span></label>
+            <input id="company" name="company" type="text" placeholder="Nome do seu negócio" autocomplete="organization">
+          </div>
+        </fieldset>
+
+        <fieldset class="form-step">
+          <legend><b>2</b>O que você precisa</legend>
+          <div class="options">
+            <label class="option"><input type="radio" name="service_type" value="Site institucional" data-key="site" checked><span><strong>Site institucional</strong><small>Apresentação completa da empresa</small></span></label>
+            <label class="option"><input type="radio" name="service_type" value="Página de venda" data-key="pagina"><span><strong>Página de venda</strong><small>Uma oferta ou campanha específica</small></span></label>
+            <label class="option"><input type="radio" name="service_type" value="Organização de Instagram" data-key="instagram"><span><strong>Instagram organizado</strong><small>Bio, destaques e posts</small></span></label>
+            <label class="option"><input type="radio" name="service_type" value="Ainda não tenho certeza" data-key="outro"><span><strong>Ainda não sei</strong><small>Quero ajuda para decidir</small></span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="form-step">
+          <legend><b>3</b>Conte um pouco mais</legend>
+          <div class="field">
+            <label for="message">Mensagem <span class="opt">(opcional)</span></label>
+            <textarea id="message" name="message" rows="5" placeholder="O que a sua empresa faz e o que você gostaria de criar ou melhorar?"></textarea>
+          </div>
+        </fieldset>
+
+        <div class="form-foot">
+          <p>O WhatsApp abre com a mensagem pronta; é só tocar em enviar. Orçamento sem compromisso.</p>
+          <button class="btn btn-primary" type="submit">Enviar pelo WhatsApp <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </div>
+      </form>
+    </div>
+
+    <aside class="side reveal">
+      <div class="side-card">
+        <h2>Prefere falar direto?</h2>
+        <p>Me chame no WhatsApp e eu respondo pessoalmente dentro do horário de atendimento.</p>
+        <a class="btn btn-light" href="https://wa.me/5592986123780" target="_blank" rel="noopener">(92) 98612-3780 <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6"/></svg></a>
+      </div>
+      <ul class="side-list">
+        <li><a href="mailto:emelintech@gmail.com"><span>E-mail</span><strong>emelintech@gmail.com</strong></a></li>
+        <li><a href="https://instagram.com/emelintech" target="_blank" rel="noopener"><span>Instagram</span><strong>@emelintech</strong></a></li>
+        <li><div><span>Local</span><strong>Manaus, AM e online</strong></div></li>
+      </ul>
+      <div class="hours">
+        <strong>Horário de atendimento</strong>
+        <span>Segunda a quinta: 7h às 11h e 13h às 18h</span>
+        <span>Sexta: 7h às 11h e 13h às 16h</span>
+        <span>Horário de Manaus</span>
+      </div>
+    </aside>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <a class="brand" href="index.html"><img src="img/logo.png" alt="" width="40" height="40"><strong>Emelin Tech</strong></a>
+        <p class="tagline">Sites e Instagram para pequenos negócios de Manaus.</p>
+      </div>
+      <div>
+        <h4>Páginas</h4>
+        <ul>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <ul>
+          <li><a href="https://wa.me/5592986123780" target="_blank" rel="noopener">(92) 98612-3780</a></li>
+          <li><a href="mailto:emelintech@gmail.com">emelintech@gmail.com</a></li>
+          <li><a href="https://instagram.com/emelintech" target="_blank" rel="noopener">@emelintech</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="bottom">
+      <span>© 2026 Emelin Tech</span>
+      <span>Manaus, Amazonas</span>
+    </div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

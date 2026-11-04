@@ -1,0 +1,27 @@
+# =============================================================================
+# .htaccess — regras do servidor Apache da hospedagem (HostVerge)
+# Mesmo padrão já testado no site da ENPROMEC.
+# =============================================================================
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # 1) Endereço oficial COM "www": quem digitar emelintech.com.br vai direto
+  #    para https://www.emelintech.com.br (o Google vê um endereço só).
+  RewriteCond %{HTTP_HOST} ^emelintech\.com\.br$ [NC]
+  RewriteRule ^ https://www.emelintech.com.br%{REQUEST_URI} [L,R=301]
+
+  # 2) Qualquer acesso por http:// vai para https:// (site seguro).
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP:X-Forwarded-Proto} !https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # 3) A pasta ".git" (histórico do código) nunca fica visível na internet.
+  RewriteRule "(^|/)\.git" - [F,L]
+</IfModule>
+
+# A página inicial é o index.html.
+DirectoryIndex index.html
+
+# Ninguém vê a lista de arquivos de uma pasta (ex.: /img/) pelo navegador.
+Options -Indexes
