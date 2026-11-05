@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mapa do site para o Google. Ao criar uma página nova, acrescente um <url> aqui. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://www.emelintech.com.br/</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://www.emelintech.com.br/servicos.html</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://www.emelintech.com.br/projetos.html</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://www.emelintech.com.br/sobre.html</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://www.emelintech.com.br/contato.html</loc><lastmod>2026-11-05</lastmod></url>
+  <url><loc>https://www.emelintech.com.br/privacidade.html</loc><lastmod>2026-11-05</lastmod></url>
+</urlset>

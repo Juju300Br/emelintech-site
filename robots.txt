@@ -1,0 +1,6 @@
+# Regras para robôs de busca (Google etc.): pode visitar tudo
+# e o mapa do site está no endereço abaixo.
+User-agent: *
+Allow: /
+
+Sitemap: https://www.emelintech.com.br/sitemap.xml
