@@ -65,7 +65,7 @@
       var v = function (id) { return (document.getElementById(id) || {}).value || ''; };
       var tipo = (form.querySelector('input[name="service_type"]:checked') || {}).value || '';
       var linhas = [
-        'Olá, Julliana! Vim pelo site da Emelin Tech.',
+        'Olá, Emelin Tech! Vim pelo site.',
         'Nome: ' + v('name'),
         v('company') ? 'Empresa: ' + v('company') : '',
         v('whatsapp') ? 'WhatsApp: ' + v('whatsapp') : '',
