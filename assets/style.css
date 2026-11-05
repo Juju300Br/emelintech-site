@@ -166,12 +166,14 @@ p { margin: 0; }
 .page-top h1 { font-size: clamp(38px, 5vw, 60px); margin-bottom: 18px; max-width: 14em; }
 
 /* ---------- Cartões de serviço (início) ---------- */
-.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+/* 4 serviços (sistemas entrou em 2026-11-05): 4 colunas no computador, 2 no tablet, 1 no celular. */
+.cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
 .card { background: var(--paper); border-radius: var(--r-lg); padding: 32px 28px; display: flex; flex-direction: column; gap: 12px; }
 .card p { color: var(--ink-2); font-size: 15.5px; flex: 1; }
 .card .link { margin-top: 12px; }
 .card .mark { width: 36px; height: 36px; color: var(--plum); margin-bottom: 14px; }
-@media (max-width: 900px) { .cards { grid-template-columns: 1fr; } }
+@media (max-width: 1100px) { .cards { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .cards { grid-template-columns: 1fr; } }
 
 /* ---------- Projetos ---------- */
 .projects { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
@@ -327,6 +329,8 @@ p { margin: 0; }
 .field input:user-invalid { border-color: #b3261e; }
 
 .options { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+/* Com 5 opções, a última ("Ainda não sei") ocupa a linha inteira. */
+.option:last-child:nth-child(odd) { grid-column: 1 / -1; }
 @media (max-width: 520px) { .options { grid-template-columns: 1fr; } }
 .option { position: relative; cursor: pointer; display: block; }
 .option input { position: absolute; opacity: 0; pointer-events: none; }
