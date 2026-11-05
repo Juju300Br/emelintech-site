@@ -412,3 +412,10 @@ p { margin: 0; }
 /* Instagram com o @ ao lado do ícone (pedido da Julliana, 2026-11-05):
    o link vira uma "pílula" em vez do círculo só com o ícone. */
 .social a.social__perfil { width: auto; padding: 0 16px 0 11px; border-radius: 999px; display: inline-flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; text-decoration: none; }
+
+/* Rodapé, coluna Contato: ícone de telefone e de e-mail antes do texto
+   (pedido da Julliana, 2026-11-05: "tá muito seco"). Mesmo traço do ícone do Instagram. */
+.contatos-rodape { gap: 12px; }
+.contatos-rodape a { display: inline-flex; align-items: center; gap: 10px; }
+.contatos-rodape svg { width: 18px; height: 18px; flex: none; color: rgba(255,255,255,.55); transition: color .2s; }
+.contatos-rodape a:hover svg { color: #fff; }
