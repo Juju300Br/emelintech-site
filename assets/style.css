@@ -419,3 +419,14 @@ p { margin: 0; }
 .contatos-rodape a { display: inline-flex; align-items: center; gap: 10px; }
 .contatos-rodape svg { width: 18px; height: 18px; flex: none; color: rgba(255,255,255,.55); transition: color .2s; }
 .contatos-rodape a:hover svg { color: #fff; }
+
+/* ---------- Política de Privacidade (privacidade.html, 2026-11-05) ----------
+   Texto corrido, numa coluna de leitura confortável. */
+.legal { max-width: 760px; font-size: 16.5px; color: var(--ink-2); }
+.legal h2 { font-size: clamp(22px, 2.4vw, 27px); color: var(--ink); margin: 40px 0 12px; }
+.legal h2:first-child { margin-top: 0; }
+.legal p { margin: 0 0 14px; }
+.legal ul { margin: 0 0 14px; padding-left: 22px; }
+.legal li { margin-bottom: 6px; }
+.legal a, .form-foot a { color: var(--plum); text-decoration: underline; text-underline-offset: 3px; }
+.site-footer .bottom a { text-decoration: underline; text-underline-offset: 3px; }
